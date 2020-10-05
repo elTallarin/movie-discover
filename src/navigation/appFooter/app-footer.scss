@@ -9,7 +9,11 @@
   .footer-container {
     max-width: 1140px;
     .footer-links {
+      margin-top: 10px;
       text-align: right;
+      .tmdb-logo {
+        height: 20px;
+      }
       .external {
         &:not(:last-child) {
           margin-right: 15px;

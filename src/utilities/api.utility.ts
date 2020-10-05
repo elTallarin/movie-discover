@@ -5,5 +5,5 @@ export function getImageUrl(relativePath: string | undefined, apiConfiguration: 
   && apiConfiguration
   && apiConfiguration.images.base_url)
     ? `${apiConfiguration.images.base_url}w500${relativePath}`
-    : 'http://placecorgi.com/500/750'
+    : process.env.PUBLIC_URL + '/placeCorgi.jpeg'
 }
