@@ -1,7 +1,7 @@
 import { isEmpty } from 'lodash';
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import AppHeader from './appHeader/AppHeader';
 import ApiConfigurationContext from '../state/api-config.context'
 import './router-config.scss';
@@ -24,6 +24,7 @@ export default function RouterConfig() {
               // Moving this routes to a separate component adds a 'custom-switch' class
               // to containing div that adds unexpected padding
                 <Switch>
+                  <Redirect from='/movie-discover' to='/' />
                   <Route exact path={'/'} component={DiscoverContainer} />
                   <Route path={'/movie/:movieId'} component={MovieDetailsContainer} />
                   <Route path='*'>
