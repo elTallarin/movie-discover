@@ -9,11 +9,13 @@ import { DiscoverContainer } from '../pages/discover';
 import MovieDetailsContainer from '../pages/movie-details/MovieDetails.container';
 import NotFound from './NotFound';
 import AppFooter from './appFooter/appFooter';
+import ScrollToTop from './ScrollToTop';
 
 export default function RouterConfig() {
   const apiConfiguration = useContext(ApiConfigurationContext);
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <AppHeader />
       <Container className='main-container'>
         { (isEmpty(apiConfiguration))
