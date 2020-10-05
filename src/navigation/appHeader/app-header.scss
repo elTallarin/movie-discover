@@ -1,0 +1,13 @@
+.app-header {
+  background: #000;
+  width: 100%;
+  .header-container {
+    max-width: 1140px;
+    .title {
+      h1 {
+        color: #FFF;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

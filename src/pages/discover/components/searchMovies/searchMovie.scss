@@ -1,0 +1,17 @@
+.search-and-filter-movies {
+  display: flex;
+  align-items: center;
+  .search-movies {
+    flex-basis: 90%;
+  }
+  .filter-movies {
+    flex-basis: 10%;
+    margin-bottom: 1rem !important;
+    padding-right: 10px;
+    text-align: right;
+  }
+  .discover{
+    background: #000;
+    color: #FFF;
+  }
+}

@@ -1,0 +1,18 @@
+.movie-resume {
+  .rating-container {
+    text-align: center;
+    .rating-info {
+      font-size: 30px;
+      .rating {
+        margin-bottom: 0;
+        :last-child {
+          font-size: 12px;
+        }
+      }
+    }
+    .vote-count {
+      font-size: 12px;
+      margin-top: -10px;;
+    }
+  }
+}
